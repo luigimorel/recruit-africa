@@ -1,10 +1,16 @@
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
+import FindCandidates from "./pages/FindCandidates";
+import FindJobs from "./pages/FindJobs";
 
 function App() {
   return (
-    <div className="mr-4">
-      <p>hello from the main component</p>
-    </div>
+    <>
+      <Switch>
+        <Route exact path="/candidates" component={FindJobs} />
+        <Route exact path="/employer" component={FindCandidates} />
+      </Switch>
+    </>
   );
 }
 
