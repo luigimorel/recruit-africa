@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+//Assets
 import Logo from "./../assets/Logo.svg";
 import DropdownIcon from "./../assets/Dropdown.svg";
-import { Link } from "react-router-dom";
+import { ReactComponent as BurgerMenu } from "./../assets/BurgerMenu.svg";
 
 const Navbar = () => {
   const menuList = [
@@ -22,10 +25,15 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex flex-row justify-between mt-12 mx-12">
-      <img src={Logo} alt="" />
+    <div className="flex flex-row justify-between items-center mt-12 mb-10 ">
+      <Link to="/">
+        <img src={Logo} alt="" />
+      </Link>
 
-      <div className="flex flex-row  items-center">
+      <p className="sm:hidden">
+        <BurgerMenu />
+      </p>
+      <div className="sm:flex  md:flex-row hidden  items-center">
         <ul className="flex flex-row ">
           {menuList.map((x) => (
             <Link key={x.id} to={x.route}>
