@@ -65,7 +65,12 @@ function Testimonials(props) {
 
               <p className="mt-6 mb-4">{x.text}</p>
               <div className="flex flex-col sm:flex-row mb-10">
-                <img src={x.img} className="rounded-full mb-5" alt="" />
+                <img
+                  src={x.img}
+                  loading="lazy"
+                  className="rounded-full mb-5"
+                  alt=""
+                />
 
                 <div className="flex flex-col ml-4 ">
                   <h6 className="font-bold">{x.manager}</h6>

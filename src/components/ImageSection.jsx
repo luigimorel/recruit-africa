@@ -38,6 +38,7 @@ const ImageSection = (props) => {
       <>
         <div className="flex flex-col sm:flex-row justify-between sm:mr-8  sm:mb-12 mb-0 items-center ">
           <img
+            loading="lazy"
             src={Anna}
             className="sm:h-96 md:w-1/2 w-full h-full md:h-1/2  sm:w-80"
             alt=""
@@ -51,6 +52,7 @@ const ImageSection = (props) => {
             {imageText.map((x) => (
               <div key={x.id} className="flex flex-row  justify-between  ">
                 <img
+                  loading="lazy"
                   src={x.icon}
                   alt=""
                   className={x.id !== 1 ? "mr-6 h-5 mt-4" : "mr-6 h-7 mt-4"}
@@ -81,6 +83,7 @@ const ImageSection = (props) => {
             {imageText.map((x) => (
               <div key={x.id} className="flex flex-row  justify-between  ">
                 <img
+                  loading="lazy"
                   src={x.icon}
                   alt=""
                   className={x.id !== 1 ? "mr-6 h-5 mt-4" : "mr-6 h-7 mt-4"}
@@ -102,6 +105,7 @@ const ImageSection = (props) => {
           </div>
 
           <img
+            loading="lazy"
             src={Rodnae}
             className="sm:h-96 md:w-1/2 md:h-1/2  sm:w-80"
             alt=""

@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="flex flex-row justify-between items-center mt-12 mb-10 ">
       <Link to="/">
-        <img src={Logo} alt="" />
+        <img src={Logo} loading="lazy" alt="" />
       </Link>
 
       <p className="sm:hidden">
@@ -43,7 +43,7 @@ const Navbar = () => {
         </ul>
         <button className="bg-yellow-300 flex flex-row py-4 px-8 items-center">
           <span className="font-medium"> Signup for free</span>
-          <img src={DropdownIcon} className="ml-4" alt="" />
+          <img loading="lazy" src={DropdownIcon} className="ml-4" alt="" />
         </button>
       </div>
     </div>

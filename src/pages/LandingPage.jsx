@@ -1,5 +1,8 @@
 import React from "react";
 
+//Assets
+import JobLogo from "./../assets/JobLogo.png";
+
 //Components
 import AvailableJobs from "../components/AvailableJobs";
 import CTA from "../components/CTA";
@@ -53,7 +56,7 @@ const LandingPage = () => {
         <table class="border-0 w-full">
           <thead className="py-20 bg-yellow-100">
             <tr className="py-20">
-              <th className="text-left ">Job type</th>
+              <th className="text-left py-4 pl-8">Job type</th>
               <th className="text-left">Company</th>
               <th className="text-left">Salary</th>
               <th className="text-left">Posted</th>
@@ -61,44 +64,36 @@ const LandingPage = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="font-bold text-gray-800">Forensic accountant</td>
-              <td className="">Facility Man</td>
-              <td className="">₦ 200,000</td>
-              <td className="">3 hours ago</td>
+            <tr className="sm:pt-40">
+              <td className="font-bold  text-gray-800">
+                <div className="flex flex-row">
+                  <span>
+                    <img src={JobLogo} loading="lazy" alt="" />
+                  </span>
+                  <p className="ml-4">Forensic accountant</p>
+                </div>
+              </td>
+              <td className="text-gray-800">Facility Man</td>
+              <td className="text-gray-800">₦ 200,000</td>
+              <td className="text-gray-800">3 hours ago</td>
               <td className="">
                 <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
                   Apply Now
                 </button>
               </td>
-            </tr>{" "}
-            <tr>
-              <td className="">Forensic accountant</td>
-              <td className="">Facility Man</td>
-              <td className="">₦ 200,000</td>
-              <td className="">3 hours ago</td>
-              <td className="">
-                <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
-                  Apply Now
-                </button>
+            </tr>
+            <tr className="sm:mb-40">
+              <td className="font-bold text-gray-800">
+                <div className="flex flex-row">
+                  <span>
+                    <img loading="lazy" src={JobLogo} alt="" />
+                  </span>
+                  <p className="ml-4">Forensic accountant</p>
+                </div>
               </td>
-            </tr>{" "}
-            <tr>
-              <td className="">Forensic accountant</td>
-              <td className="">Facility Man</td>
-              <td className="">₦ 200,000</td>
-              <td className="">3 hours ago</td>
-              <td className="">
-                <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
-                  Apply Now
-                </button>
-              </td>
-            </tr>{" "}
-            <tr>
-              <td className="">Forensic accountant</td>
-              <td className="">Facility Man</td>
-              <td className="">₦ 200,000</td>
-              <td className="">3 hours ago</td>
+              <td className="text-gray-800">Facility Man</td>
+              <td className="text-gray-800">₦ 200,000</td>
+              <td className="text-gray-800">3 hours ago</td>
               <td className="">
                 <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
                   Apply Now
