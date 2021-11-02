@@ -11,17 +11,17 @@ const Navbar = () => {
     {
       id: 1,
       text: "Find candidates",
-      route: "/",
+      route: "/candidates",
     },
     {
       id: 2,
       text: "Find jobs",
-      route: "/",
+      route: "/employers",
     },
     {
       id: 3,
       text: "Login",
-      route: "/",
+      route: "/login",
     },
   ];
   return (
