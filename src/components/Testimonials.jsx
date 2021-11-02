@@ -38,13 +38,13 @@ function Testimonials(props) {
         {testmonialHeading}
       </h4>
 
-      <div className="flex flex-col md:flex-row mx-5 sm:mx-16">
+      <div className="flex flex-col md:flex-row justify-between ">
         {testomonialText.map((x) => (
           <div
             key={x.id}
-            className="flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-0 sm:mr-10 mb-10 sm:mb-20"
+            className="flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-0  mb-10 sm:mb-20"
           >
-            <div className="px-3 pt-3 sm:px-12 sm:pt-10">
+            <div className="px-3 pt-3 sm:px-6 sm:pt-10">
               <div className="flex flex-row">
                 <span className=" mr-4 sm:mr-7 ">
                   <StarFilledIcon />
