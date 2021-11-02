@@ -43,7 +43,7 @@ const Footer = () => {
           </p>
           <p className="text-yellow-500 font-bold text-2xl mb-5 ">104872</p>
           <p className="text-white mb-7 text-lg font-bold">Connect with us</p>
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center mb-8">
             {socialLinks.map((x) => (
               <span key={x.id} className="mr-7">
                 <a href={x.link} target="_blank" rel="noreferrer noopenner">
