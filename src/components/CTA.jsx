@@ -19,7 +19,7 @@ const CTA = (props) => {
           </p>
         </span>
         <div className="h-24">
-          <button className="bg-yellow-400  mt-8 sm:px-12 py-5  font-bold text-black">
+          <button className="bg-yellow-400  mt-8 sm:px-12 py-5 px-8  font-bold text-black">
             {ctaText}
           </button>
         </div>
