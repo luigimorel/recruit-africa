@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 
 // Assets
 import { ReactComponent as Logo } from "./../assets/Logo.svg";
 import { ReactComponent as TwitterIcon } from "./../assets/Twitter.svg";
 import { ReactComponent as FacebookIcon } from "./../assets/Facebook.svg";
 import { ReactComponent as IgIcon } from "./../assets/Instagram.svg";
-import { ReactComponent as ArrowIcon } from "./../assets/Arrow.svg";
 
 const Footer = () => {
   const socialLinks = [
@@ -58,30 +57,37 @@ const Footer = () => {
           <div className="flex flex-col ">
             <div className="flex flex-col mb-9 ">
               <h3 className="font-bold text-lg text-gray-300 mb-5">Company</h3>
-              <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                About us
-              </Link>
-              <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                Terms & conditions
-              </Link>
-
-              <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                Privacy policy
-              </Link>
+              <Router>
+                <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
+                  About us
+                </Link>
+              </Router>
+              <Router>
+                <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
+                  Terms & conditions
+                </Link>
+              </Router>
+              <Router>
+                <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
+                  Privacy policy
+                </Link>
+              </Router>
             </div>
 
             <div className="flex flex-col mb-9">
               <h3 className="font-bold text-lg text-gray-300 mb-5">
                 Help & Support
               </h3>
-              <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                FAQs
-              </Link>
-
-              <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                info@recruit4africa.com
-              </Link>
-
+              <Router>
+                <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
+                  FAQs
+                </Link>
+              </Router>
+              <Router>
+                <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
+                  info@recruit4africa.com
+                </Link>
+              </Router>
               <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
                 +2349-000-000-000
               </Link>

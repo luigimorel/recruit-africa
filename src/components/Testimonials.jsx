@@ -33,8 +33,8 @@ function Testimonials(props) {
   ];
 
   return (
-    <div>
-      <h4 className="sm:text-4xl text-3xl sm:px-64  font-bold my-0 text-center mb-10">
+    <div className="px-20">
+      <h4 className="sm:text-4xl text-3xl sm:px-64   font-bold my-0 text-center mb-10">
         {testmonialHeading}
       </h4>
 
@@ -42,7 +42,11 @@ function Testimonials(props) {
         {testomonialText.map((x) => (
           <div
             key={x.id}
-            className="flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-0  mb-10 sm:mb-20"
+            className={
+              x.id === 3
+                ? "flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-0  mb-10 sm:mb-20"
+                : "flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-6  mb-10 sm:mb-20"
+            }
           >
             <div className="px-3 pt-3 sm:px-6 sm:pt-10">
               <div className="flex flex-row">
