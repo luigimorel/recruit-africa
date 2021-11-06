@@ -20,7 +20,7 @@ const LandingPage = () => {
 
       <AvailableJobs />
 
-      <div className="sm:mx-20 mb-24 hidden sm:block">
+      <div className="sm:mx-20 mb-24  sm:block">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between">
             <h3 className="font-bold text-4xl mb-5">Latest Jobs</h3>
@@ -53,7 +53,7 @@ const LandingPage = () => {
         </div>
 
         {/* Start of the table */}
-        <table class="border-0 w-full">
+        <table className="border-0 w-full">
           <thead className="py-20 bg-yellow-100">
             <tr className="py-20">
               <th className="text-left py-4 pl-8">Job type</th>
@@ -67,7 +67,7 @@ const LandingPage = () => {
             <tr className="sm:pt-40">
               <td className="font-bold  text-gray-800">
                 <div className="flex flex-row">
-                  <span>
+                  <span className="hidden sm:block">
                     <img src={JobLogo} loading="lazy" alt="" />
                   </span>
                   <p className="ml-4">Forensic accountant</p>
@@ -94,7 +94,7 @@ const LandingPage = () => {
               <td className="text-gray-800">Facility Man</td>
               <td className="text-gray-800">₦ 200,000</td>
               <td className="text-gray-800">3 hours ago</td>
-              <td className="">
+              <td className="py-4">
                 <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
                   Apply Now
                 </button>

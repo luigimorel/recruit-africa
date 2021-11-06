@@ -1,4 +1,6 @@
 import React from "react";
+
+//Components
 import Navbar from "../components/Navbar";
 import CTA from "../components/CTA";
 import HeroSection from "../components/HeroSection";

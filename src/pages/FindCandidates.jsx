@@ -1,7 +1,6 @@
 import React from "react";
 
 //Assets
-
 import { ReactComponent as CheckCircle } from "./../assets/CheckCircle.svg";
 
 // Components
