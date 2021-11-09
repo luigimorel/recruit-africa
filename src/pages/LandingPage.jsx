@@ -12,15 +12,59 @@ import Navbar from "../components/Navbar";
 import Testimonials from "../components/Testimonials";
 
 const LandingPage = () => {
+  const headings = [
+    {
+      id: 1,
+      text: "Job Type",
+    },
+    {
+      id: 2,
+      text: "Company",
+    },
+    {
+      id: 3,
+      text: "Salary",
+    },
+    {
+      id: 4,
+      text: "Posted",
+    },
+    {
+      id: 5,
+      text: "",
+    },
+  ];
+
+  const jobs = [
+    {
+      id: 1,
+      logo: JobLogo,
+      title: "Forensic accountant",
+      type: "Facility Man",
+      amount: "2,000,000",
+      timePosted: "3 hours ago",
+      btnText: "Apply Now",
+    },
+    {
+      id: 2,
+      logo: JobLogo,
+      title: "Forensic accountant",
+      type: "Facility Man",
+      amount: "2,000,000",
+      timePosted: "3 hours ago",
+      btnText: "Apply Now",
+    },
+  ];
   return (
     <>
       <div className="sm:px-12  bg-white">
         <Navbar />
       </div>
 
-      <AvailableJobs />
-
-      <div className="sm:mx-20 -mt-1 mb-24  sm:block">
+      <div className="bg-white">
+        <AvailableJobs />
+      </div>
+      <div className="sm:mx-20 mb-24  sm:block">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between">
             <h3 className="font-bold text-4xl mb-5">Latest Jobs</h3>
@@ -53,53 +97,39 @@ const LandingPage = () => {
         </div>
 
         {/* Start of the table */}
-        <table className="border-0 w-full">
+        <table className="border-0 w-full jobs-table">
           <thead className="py-20 bg-yellow-100">
             <tr className="py-20">
-              <th className="text-left py-4 pl-8">Job type</th>
-              <th className="text-left">Company</th>
-              <th className="text-left">Salary</th>
-              <th className="text-left">Posted</th>
-              <th className="text-left"></th>
+              {headings.map((x) => (
+                <th
+                  className={x.id === 1 ? "text-left py-4 pl-8" : "text-left"}
+                >
+                  {x.text}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            <tr className="sm:pt-40">
-              <td className="font-bold  text-gray-800">
-                <div className="flex flex-row">
-                  <span className="hidden sm:block">
-                    <img src={JobLogo} loading="lazy" alt="" />
-                  </span>
-                  <p className="ml-4">Forensic accountant</p>
-                </div>
-              </td>
-              <td className="text-gray-800">Facility Man</td>
-              <td className="text-gray-800">₦ 200,000</td>
-              <td className="text-gray-800">3 hours ago</td>
-              <td className="">
-                <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
-                  Apply Now
-                </button>
-              </td>
-            </tr>
-            <tr className="sm:mb-40">
-              <td className="font-bold text-gray-800">
-                <div className="flex flex-row">
-                  <span>
-                    <img loading="lazy" src={JobLogo} alt="" />
-                  </span>
-                  <p className="ml-4">Forensic accountant</p>
-                </div>
-              </td>
-              <td className="text-gray-800">Facility Man</td>
-              <td className="text-gray-800">₦ 200,000</td>
-              <td className="text-gray-800">3 hours ago</td>
-              <td className="py-4">
-                <button className="border-gray-500 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
-                  Apply Now
-                </button>
-              </td>
-            </tr>
+            {jobs.map((x) => (
+              <tr className="sm:pt-40 " key={x.id}>
+                <td className="font-bold  text-gray-800">
+                  <div className="flex flex-row">
+                    <span className="hidden sm:block">
+                      <img src={x.logo} loading="lazy" alt="" />
+                    </span>
+                    <p className="ml-4">{x.title}</p>
+                  </div>
+                </td>
+                <td className="text-gray-800">{x.type}</td>
+                <td className="text-gray-800">UGX {x.timePosted}</td>
+                <td className="text-gray-800">{x.amount}</td>
+                <td className="">
+                  <button className="border-gray-500 mx-5 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
+                    {x.btnText}
+                  </button>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
