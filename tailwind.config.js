@@ -8,6 +8,7 @@ module.exports = {
         employer: "url('/src/assets/EmployerHero.png')",
         overlay:
           "linear-gradient(89.4deg, #18181b 9.52%, rgba(24, 24, 27, 0) 89.41%)",
+        candidate: "url('/src/assets/accounts/CandidateSignUp.png')",
       },
     },
   },
