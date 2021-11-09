@@ -6,6 +6,7 @@ import { ReactComponent as Logo } from "./../assets/Logo.svg";
 import { ReactComponent as TwitterIcon } from "./../assets/Twitter.svg";
 import { ReactComponent as FacebookIcon } from "./../assets/Facebook.svg";
 import { ReactComponent as IgIcon } from "./../assets/Instagram.svg";
+import { ReactComponent as Arrow } from "./../assets/Arrow.svg";
 
 const Footer = () => {
   const socialLinks = [
@@ -133,13 +134,17 @@ const Footer = () => {
               <h3 className="font-bold text-lg text-gray-300 mb-5">
                 Newsletter
               </h3>
-              <input
-                type="text"
-                className="w-auto border-0"
-                name="newsletter"
-                id="newletter "
-                placeholder="Enter email address"
-              />
+              <label class="relative text-gray-400 focus-within:text-gray-600 block mr-3">
+                <input
+                  type="text"
+                  name="location"
+                  required
+                  id="location"
+                  placeholder="Enter your email address"
+                  autoComplete
+                  class="form-input border-none   py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-2 focus:outline-none"
+                />
+              </label>
             </div>
           </div>
         </div>
