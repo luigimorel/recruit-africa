@@ -9,6 +9,7 @@ import { ReactComponent as MapPin } from "./../../../assets/accounts/map-pin.svg
 import { ReactComponent as Clock } from "./../../../assets/accounts/clock.svg";
 import { ReactComponent as Smartphone } from "./../../../assets/accounts/smartphone.svg";
 import { ReactComponent as AtSign } from "./../../../assets/accounts/AtSign.svg";
+import { ReactComponent as Player } from "./../../../assets/accounts/Player.svg";
 
 const SignUpCandidates = () => {
   return (
@@ -16,8 +17,11 @@ const SignUpCandidates = () => {
       <div className=" flex-row h-auto w-1/2 bg-candidate hidden sm:flex justify-between">
         <div className="bg-overlay">
           <div className=" ml-12">
-            <img src={Logo} className="mb-96 mt-10" alt="" />
+            <Link to="/">
+              <img src={Logo} className="mb-96 mt-10" alt="" />
+            </Link>
             <div className="text-white mb-10">
+              <Player className="mb-4" />
               <h3 className="font-bold text-2xl">
                 We get you the best job offers
               </h3>
@@ -34,7 +38,7 @@ const SignUpCandidates = () => {
         <div className="sm:mr-12">
           <h6 className="mb-9 float-right mt-10">
             Already have an account? {"   "}
-            <Link to="/candidate-signin">
+            <Link to="/login">
               <span className="text-yellow-400 font-bold">Log In</span>
             </Link>
           </h6>
