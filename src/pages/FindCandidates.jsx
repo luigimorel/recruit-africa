@@ -1,8 +1,5 @@
 import React from "react";
 
-//Assets
-import { ReactComponent as CheckCircle } from "./../assets/CheckCircle.svg";
-
 // Components
 import Navbar from "../components/Navbar";
 import CTA from "../components/CTA";
