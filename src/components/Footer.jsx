@@ -6,7 +6,6 @@ import { ReactComponent as Logo } from "./../assets/Logo.svg";
 import { ReactComponent as TwitterIcon } from "./../assets/Twitter.svg";
 import { ReactComponent as FacebookIcon } from "./../assets/Facebook.svg";
 import { ReactComponent as IgIcon } from "./../assets/Instagram.svg";
-import { ReactComponent as Arrow } from "./../assets/Arrow.svg";
 
 const Footer = () => {
   const socialLinks = [
