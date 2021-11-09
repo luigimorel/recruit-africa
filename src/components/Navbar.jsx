@@ -24,6 +24,7 @@ const Navbar = () => {
       route: "/login",
     },
   ];
+
   return (
     <div className="flex flex-row justify-between items-center mt-12 mb-10 ">
       <Link to="/">
