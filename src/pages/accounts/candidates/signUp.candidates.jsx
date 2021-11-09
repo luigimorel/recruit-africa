@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //Assets
 import Logo from "./../../../assets/Logo.svg";
@@ -33,7 +34,9 @@ const SignUpCandidates = () => {
         <div className="sm:mr-12">
           <h6 className="mb-9 float-right mt-10">
             Already have an account? {"   "}
-            <span className="text-yellow-400 font-bold">Log In</span>
+            <Link to="/candidate-signin">
+              <span className="text-yellow-400 font-bold">Log In</span>
+            </Link>
           </h6>
           <h2 className="font-bold pt-24 text-4xl mb-6">Talent Sign up</h2>
         </div>
@@ -47,6 +50,7 @@ const SignUpCandidates = () => {
               <input
                 type="text"
                 name="name"
+                required
                 id="name"
                 placeholder="Your full name"
                 class="form-input border border-gray-400 rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
@@ -63,6 +67,7 @@ const SignUpCandidates = () => {
                 type="email"
                 name="email"
                 id="email"
+                required
                 placeholder="Email"
                 class="form-input border border-gray-400 rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
               />
@@ -92,6 +97,7 @@ const SignUpCandidates = () => {
                 type="password"
                 name="password"
                 id="password"
+                required
                 placeholder="Password"
                 class="form-input border border-gray-400 rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
               />
@@ -105,9 +111,10 @@ const SignUpCandidates = () => {
                 <label class="relative text-gray-400 focus-within:text-gray-600 block">
                   <MapPin className="absolute w-6 h-6 top-2.5  left-4" />
                   <input
-                    type="password"
-                    name="password"
-                    id="password"
+                    type="text"
+                    name="location"
+                    id="location"
+                    required
                     placeholder="Your location"
                     class="form-input border border-gray-400 rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
                   />
@@ -121,6 +128,7 @@ const SignUpCandidates = () => {
                   <select
                     name="timezone"
                     id="timezone"
+                    required
                     class="form-input border  border-gray-400 rounded py-3 px-4 w-full mr-14 bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
                   >
                     <option defaultValue>Timezone</option>
@@ -136,7 +144,13 @@ const SignUpCandidates = () => {
             </div>
           </div>
           <div className="flex flex-row mb-7">
-            <input type="checkbox" className="mt-1" name="agree" id="agree" />
+            <input
+              type="checkbox"
+              required
+              className="mt-1"
+              name="agree"
+              id="agree"
+            />
             <p className="ml-4 text-xs">
               By signing up you agree to Recruit4africa's Terms of <br />
               Service and Privacy Policy
