@@ -101,14 +101,17 @@ const FindCandidates = () => {
     <>
       <div className="sm:mx-12 mx-3">
         <Navbar />
-        <HeroSection
-          heading="For Employers"
-          background="bg-employer"
-          descText="candidates for the job "
-          btnText="Find Candidates"
-        />
+      </div>
+      <HeroSection
+        heading="For Employers"
+        background="bg-employer"
+        descText="candidates for the job "
+        btnText="Find Candidates"
+      />
+      <div className="sm:mx-12 mx-3">
         <ImageSection descText="Post a job" />
-
+      </div>
+      <div className="sm:mx-12 mx-3">
         {/* Start of the subscrition section */}
         <div className="mb-36 ">
           <div className="sm:px-20 px-10 items-center">
