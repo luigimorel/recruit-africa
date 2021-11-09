@@ -6,7 +6,7 @@ import FindJobs from "./pages/FindJobs";
 import LandingPage from "./pages/LandingPage";
 import SignInCandidates from "./pages/accounts/common/signIn";
 import SignUpCandidates from "./pages/accounts/candidates/signUp.candidates";
-import ResetPassword from "./pages/accounts/common/resetPassword.candidates";
+import ResetPassword from "./pages/accounts/common/resetPassword";
 import SignUpRecruitors from "./pages/accounts/recruitors/signup.recruitors";
 
 const Routes = () => {

@@ -150,6 +150,7 @@ const SignUpCandidates = () => {
           <div className="flex flex-row mb-7">
             <input
               type="checkbox"
+              checked
               required
               className="mt-1"
               name="agree"

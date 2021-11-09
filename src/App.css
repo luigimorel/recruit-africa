@@ -3,6 +3,11 @@
   color: #ffffff;
   font-weight: bold;
 }
+
 .app-container {
   background-color: #ebebeb;
+}
+
+table tbody tr {
+  padding-bottom: 0 2rem;
 }
