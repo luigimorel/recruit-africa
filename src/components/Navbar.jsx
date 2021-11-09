@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center mt-12 mb-10 ">
+    <div className="flex flex-row justify-between items-center py-8  ">
       <Link to="/">
         <img src={Logo} loading="lazy" alt="" />
       </Link>
