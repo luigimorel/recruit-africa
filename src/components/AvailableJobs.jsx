@@ -38,7 +38,7 @@ const AvailableJobs = () => {
                 name="location"
                 required
                 id="location"
-                placeholder="location"
+                placeholder="Location"
                 autoComplete
                 class="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
               />
