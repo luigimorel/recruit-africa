@@ -14,13 +14,13 @@ import Testimonials from "../components/Testimonials";
 const LandingPage = () => {
   return (
     <>
-      <div className="sm:mx-12">
+      <div className="sm:px-12  bg-white">
         <Navbar />
       </div>
 
       <AvailableJobs />
 
-      <div className="sm:mx-20 mb-24  sm:block">
+      <div className="sm:mx-20 -mt-1 mb-24  sm:block">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between">
             <h3 className="font-bold text-4xl mb-5">Latest Jobs</h3>
