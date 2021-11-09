@@ -21,7 +21,7 @@ const ResetPassword = () => {
             {/* Email */}
 
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <AtSign className="absolute w-6 h-6 top-2.5  left-4" />
+              <AtSign className="absolute w-6 h-6 top-3  left-4" />
 
               <input
                 type="email"

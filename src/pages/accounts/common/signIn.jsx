@@ -44,7 +44,7 @@ const SignInCandidates = () => {
             <p className="mb-2.5 ml-3">Email</p>
 
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <AtSign className="absolute w-6 h-6 top-2.5  left-4" />
+              <AtSign className="absolute w-6 h-6 top-3  left-4" />
 
               <input
                 type="email"
@@ -62,7 +62,7 @@ const SignInCandidates = () => {
           <div className=" mb-6">
             <p className="mb-2.5 ml-3">Password</p>
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <Lock className="absolute w-6 h-6 top-2.5  left-4" />
+              <Lock className="absolute w-6 h-6 top-3 left-4" />
               <input
                 type="password"
                 name="password"

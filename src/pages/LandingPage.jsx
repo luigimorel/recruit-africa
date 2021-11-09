@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar";
 import Testimonials from "../components/Testimonials";
 
 const LandingPage = () => {
-  const headings = [
+  const rowHeadings = [
     {
       id: 1,
       text: "Job Type",
@@ -55,6 +55,7 @@ const LandingPage = () => {
       btnText: "Apply Now",
     },
   ];
+
   return (
     <>
       <div className="sm:px-12  bg-white">
@@ -100,7 +101,7 @@ const LandingPage = () => {
         <table className="border-0 w-full jobs-table">
           <thead className="py-20 bg-yellow-100">
             <tr className="py-20">
-              {headings.map((x) => (
+              {rowHeadings.map((x) => (
                 <th
                   className={x.id === 1 ? "text-left py-4 pl-8" : "text-left"}
                 >

@@ -49,7 +49,7 @@ const SignUpCandidates = () => {
             {/* Name */}
             <p className="mb-2.5">Your full name</p>
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <User className="absolute w-6 h-6 top-2.5  left-4" />
+              <User className="absolute w-6 h-6 top-3  left-4" />
 
               <input
                 type="text"
@@ -65,7 +65,7 @@ const SignUpCandidates = () => {
             <p className="mb-2.5">Email</p>
             {/* Email */}
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <AtSign className="absolute w-6 h-6 top-2.5  left-4" />
+              <AtSign className="absolute w-6 h-6 top-3  left-4" />
 
               <input
                 type="email"
@@ -81,7 +81,7 @@ const SignUpCandidates = () => {
             <p className="mb-2.5">Phone Number</p>
             {/* Phone Number */}
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <Smartphone className="absolute w-6 h-6 top-2.5  left-4" />
+              <Smartphone className="absolute w-6 h-6 top-3  left-4" />
 
               <input
                 type="tel"
@@ -96,7 +96,7 @@ const SignUpCandidates = () => {
             <p className="mb-2.5">Password</p>
             {/* Password */}
             <label class="relative text-gray-400 focus-within:text-gray-600 block">
-              <Lock className="absolute w-6 h-6 top-2.5  left-4" />
+              <Lock className="absolute w-6 h-6 top-3  left-4" />
               <input
                 type="password"
                 name="password"
@@ -113,7 +113,7 @@ const SignUpCandidates = () => {
                 <p className="mb-2.5">Your location</p>
                 {/* Location */}
                 <label class="relative text-gray-400 focus-within:text-gray-600 block">
-                  <MapPin className="absolute w-6 h-6 top-2.5  left-4" />
+                  <MapPin className="absolute w-6 h-6 top-3  left-4" />
                   <input
                     type="text"
                     name="location"
@@ -128,7 +128,7 @@ const SignUpCandidates = () => {
                 <p className="mb-2.5">Your time zone</p>
                 {/* Time zone */}
                 <label class="relative text-gray-400 focus-within:text-gray-600 block">
-                  <Clock className="absolute w-6 h-6 top-2.5  left-4" />
+                  <Clock className="absolute w-6 h-6 top-3  left-4" />
                   <select
                     name="timezone"
                     id="timezone"
