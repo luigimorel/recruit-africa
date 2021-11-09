@@ -89,7 +89,7 @@ const Footer = () => {
                 </Link>
               </Router>
               <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
-                +2349-000-000-000
+                +256-700-000-000
               </Link>
 
               <Link to="/" className="text-white mb-2.5 hover:text-gray-300">
