@@ -8,6 +8,7 @@ import SignInCandidates from "./pages/accounts/common/signIn";
 import SignUpCandidates from "./pages/accounts/candidates/signUp.candidates";
 import ResetPassword from "./pages/accounts/common/resetPassword";
 import SignUpRecruitors from "./pages/accounts/recruitors/signup.recruitors";
+import CandidateProfile from "./pages/accounts/candidates/CandidateProfile";
 
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
         <Route exact path="/recruitor-signup" component={SignUpRecruitors} />
         <Route exact path="/login" component={SignInCandidates} />
         <Route exact path="/reset-password" component={ResetPassword} />
+        <Route exact path="/profile-candidate" component={CandidateProfile} />
       </Switch>
     </>
   );
