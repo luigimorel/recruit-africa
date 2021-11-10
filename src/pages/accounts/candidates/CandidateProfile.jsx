@@ -51,6 +51,11 @@ const CandidateProfile = () => {
       <div className=" bg-gray-800">
         <div className="  bg-candidates-gb h-screen w-80 ">
           <Logo className="ml-10 mt-10" />
+
+          <div className="text-white">
+            <h3 className="font-bold text-2xl mt-80">Build your resume</h3>
+            <p></p>
+          </div>
         </div>
       </div>
 
@@ -81,6 +86,10 @@ const CandidateProfile = () => {
                 </div>
               ))}
             </div>
+
+            <button className=" bg-yellow-500 uppercase mt-4 py-4 px-24 font-bold text-sm">
+              NEXT
+            </button>
           </form>
         </div>
       </div>
