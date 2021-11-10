@@ -4,6 +4,48 @@ import React from "react";
 import { ReactComponent as Logo } from "./../../../assets/Logo.svg";
 
 const CandidateProfile = () => {
+  const jobs = [
+    {
+      id: 1,
+      title: "Forensic Accountant",
+    },
+    {
+      id: 2,
+      title: "Tax Attorney",
+    },
+    {
+      id: 3,
+      title: "Tax Preparer",
+    },
+    {
+      id: 4,
+      title: "Tax Accountant",
+    },
+    {
+      id: 5,
+      title: "Accounting Clerk",
+    },
+    {
+      id: 6,
+      title: "Accounting Careers",
+    },
+    {
+      id: 7,
+      title: "Compliance Officer",
+    },
+    {
+      id: 8,
+      title: "Tax Consultant",
+    },
+    {
+      id: 9,
+      title: "Internal Auditor",
+    },
+    {
+      id: 10,
+      title: "Budget Analyst",
+    },
+  ];
   return (
     <div className="flex sm:flex-row ">
       <div className=" bg-gray-800">
@@ -24,42 +66,20 @@ const CandidateProfile = () => {
             </h3>
 
             <div className=" grid grid-cols-3">
-              <div className=" hover:bg-gray-200 mb-8 border w-60 bg-white border-gray-300 py-2.5 flex justify-between items-center">
-                <span className="px-4">Forensic Accountant</span>
-                <input
-                  type="checkbox"
-                  name="role"
-                  className="mr-5 rounded peer-checked:bg-black"
-                  id="role"
-                />
-              </div>{" "}
-              <div className=" hover:bg-gray-200 mb-8 border w-60  bg-white border-gray-300 py-2.5 flex justify-between items-center">
-                <span className="px-4">Forensic Accountant</span>
-                <input
-                  type="checkbox"
-                  name="role"
-                  className="mr-5 rounded peer-checked:bg-black"
-                  id="role"
-                />
-              </div>{" "}
-              <div className=" hover:bg-gray-200 mb-8 border w-60 bg-white border-gray-300 py-2.5 flex justify-between items-center">
-                <span className="px-4">Forensic Accountant</span>
-                <input
-                  type="checkbox"
-                  name="role"
-                  className="mr-5 rounded peer-checked:bg-black"
-                  id="role"
-                />
-              </div>
-              <div className=" hover:bg-gray-200 mb-8 border w-60 border-gray-300 bg-white py-2.5 flex justify-between items-center">
-                <span className="px-4">Forensic Accountant</span>
-                <input
-                  type="checkbox"
-                  name="role"
-                  className="mr-5 rounded peer-checked:bg-black"
-                  id="role"
-                />
-              </div>
+              {jobs.map((x) => (
+                <div
+                  key={x.id}
+                  className=" hover:bg-gray-200 mb-8 border w-60 bg-white border-gray-300 py-2.5 flex justify-between items-center"
+                >
+                  <span className="px-4">{x.title}</span>
+                  <input
+                    type="checkbox"
+                    name="role"
+                    className="mr-5 rounded peer-checked:bg-black"
+                    id="role"
+                  />
+                </div>
+              ))}
             </div>
           </form>
         </div>
