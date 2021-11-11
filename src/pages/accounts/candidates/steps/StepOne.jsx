@@ -45,13 +45,13 @@ const StepOne = () => {
   ];
   return (
     <>
-      <h3 className=" font-bold text-2xl mb-12">What's your current role? </h3>
+      <h3 className=" font-bold text-2xl mb-4">What's your current role? </h3>
 
       <div className=" grid grid-cols-3">
         {jobs.map((x) => (
           <div
             key={x.id}
-            className=" hover:bg-gray-200 mb-8 border w-60 bg-white border-gray-300 py-2.5 flex justify-between items-center"
+            className=" hover:bg-gray-200 mt-8 border w-60 bg-white border-gray-300 py-2.5 flex justify-between items-center"
           >
             <span className="px-4">{x.title}</span>
             <input
