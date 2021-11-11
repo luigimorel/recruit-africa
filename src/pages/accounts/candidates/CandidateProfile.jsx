@@ -6,6 +6,8 @@ import { ReactComponent as ArrowLeft } from "./../../../assets/accounts/ArrowLef
 
 //Components
 import StepOne from "./steps/StepOne";
+import StepTwo from "./steps/StepTwo";
+import StepThree from "./steps/StepThree";
 
 const CandidateProfile = () => {
   return (
@@ -16,7 +18,7 @@ const CandidateProfile = () => {
             <Logo className="mb-80" />
 
             <div className="text-white ">
-              <h3 className="font-bold text-2xl ">Build your resume</h3>
+              <h3 className="font-bold text-2xl mb-2 ">Build your resume</h3>
               <p className="mr-4 font-medium text-lg ">
                 Join thousands of accountants who’ve found their dream job using
                 Recruit4Africa.
@@ -33,14 +35,14 @@ const CandidateProfile = () => {
           </div>
 
           <form action="" method="post">
-            <StepOne />
+            <StepThree />
           </form>
-          <div className="flex flex-row">
+          <div className="flex flex-row mt-9 pb-10">
             <button className=" bg-yellow-500 uppercase mt-4 py-4 px-24 font-bold text-sm">
               NEXT
             </button>
 
-            <button className="  border ml-8 border-yellow-300 flex flex-row items-center justify-between uppercase mt-4 py-4 px-20 font-bold text-sm">
+            <button className="  border ml-8 border-yellow-300 flex flex-row items-center justify-between uppercase mt-4 py-4 px-16 font-bold text-sm">
               <ArrowLeft className="mr-6" />
 
               <span className="uppercase">GO BACK</span>
