@@ -8,6 +8,7 @@ import { ReactComponent as ArrowLeft } from "./../../../assets/accounts/ArrowLef
 import StepOne from "./steps/StepOne";
 import StepTwo from "./steps/StepTwo";
 import StepThree from "./steps/StepThree";
+import StepFour from "./steps/StepFour";
 
 const CandidateProfile = () => {
   return (
@@ -28,14 +29,14 @@ const CandidateProfile = () => {
         </div>
       </div>
 
-      <div className=" ml-28 mr-36  w-full relative pl-80 h-screen">
+      <div className=" ml-28 mr-36  w-full relative pl-80 h-full">
         <div className=" mt-16">
           <div className=" h-3  bg-gray-300 mb-11">
             {/* Add progress bar here */}
           </div>
 
           <form action="" method="post">
-            <StepThree />
+            <StepFour />
           </form>
           <div className="flex flex-row mt-9 pb-10">
             <button className=" bg-yellow-500 uppercase mt-4 py-4 px-24 font-bold text-sm">
