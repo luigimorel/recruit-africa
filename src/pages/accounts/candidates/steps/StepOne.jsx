@@ -44,7 +44,7 @@ const StepOne = () => {
     },
   ];
   return (
-    <>
+    <div className=" h-auto min-h-full">
       <h3 className=" font-bold text-2xl mb-4">What's your current role? </h3>
 
       <div className=" grid grid-cols-3">
@@ -63,7 +63,7 @@ const StepOne = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

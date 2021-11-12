@@ -2,7 +2,7 @@ import React from "react";
 
 const StepFive = () => {
   return (
-    <>
+    <div className=" h-1/2 min-h-full">
       <h3 className=" font-bold text-2xl mb-4">Your skills </h3>
 
       <div className="flex flex-col">
@@ -15,7 +15,7 @@ const StepFive = () => {
           placeholder="Book keeping"
         />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -33,7 +33,7 @@ const StepFour = () => {
     },
   ];
   return (
-    <div className=" min-h-full">
+    <div className=" min-h-full  h-1/2">
       <h3 className=" font-bold text-2xl mb-4">What's your current role? </h3>
       <div className="grid grid-cols-2">
         {jobs.map((x) => (
