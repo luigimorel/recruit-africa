@@ -42,10 +42,13 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <button className="bg-yellow-300 flex flex-row py-4 px-8 items-center">
-          <span className="font-medium"> Signup for free</span>
-          <img loading="lazy" src={DropdownIcon} className="ml-4" alt="" />
-        </button>
+
+        <Link to="/candidate-signup">
+          <button className="bg-yellow-300 flex flex-row py-4 px-8 items-center">
+            <span className="font-medium"> Signup for free</span>
+            <img loading="lazy" src={DropdownIcon} className="ml-4" alt="" />
+          </button>
+        </Link>
       </div>
     </div>
   );
