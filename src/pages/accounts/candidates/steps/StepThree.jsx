@@ -74,7 +74,7 @@ const StepThree = () => {
         />
       </div>
 
-      {/*  */}
+      {/* Start of the accomplishments  */}
       <div className=" w-4/5 flex flex-row justify-start mb-2.5">
         <p className="mr-14 text-gray-800 ">
           Describe your accomplishmnets in this role
@@ -89,7 +89,6 @@ const StepThree = () => {
         rows="4"
         className=" w-full"
         placeholder="Created [accounting rule], which resulted in [percentage improvement]"
-        className="pt-2 px-3"
         required
         minLength="70"
       ></textarea>
