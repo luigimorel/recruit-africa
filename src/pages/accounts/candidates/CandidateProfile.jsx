@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // Assets
@@ -6,9 +6,18 @@ import { ReactComponent as Logo } from "./../../../assets/Logo.svg";
 import { ReactComponent as ArrowLeft } from "./../../../assets/accounts/ArrowLeft.svg";
 
 //Components
+import StepOne from "./steps/StepOne";
+import StepTwo from "./steps/StepTwo";
+import StepThree from "./steps/StepThree";
+import StepFour from "./steps/StepFour";
 import StepFive from "./steps/StepFive";
 
 const CandidateProfile = () => {
+  const [step, setStep] = useState(1);
+
+  const nextStep = () => setStep((x) => (x <= 4 ? x + 1 : x));
+  const prevStep = () => setStep((x) => (x > 1 ? x - 1 : x));
+
   return (
     <div className="flex sm:flex-row ">
       <div className=" bg-gray-800 fixed">
@@ -28,21 +37,35 @@ const CandidateProfile = () => {
         </div>
       </div>
 
-      <div className=" ml-28 mr-36  w-full relative pl-80 min-h-full">
+      <div className=" ml-28 mr-36  w-full h-full min-h-full   pl-80 ">
         <div className=" mt-16">
-          <div className=" h-3  bg-gray-300 mb-11">
-            {/* Add progress bar here */}
+          <div className=" h-3  bg-gray-300 mb-11 flex items-center">
+            {/* Progress bar at the top of the heading */}
+            {step && (
+              <div className={`bg-yellow-400 w-${step * 2}/12 h-3`}></div>
+            )}
           </div>
 
-          <form action="" method="post">
-            <StepFive />
+          <form action="" method="post" className=" overflow-y-scroll h-1/2">
+            {step === 1 && <StepOne />}
+            {step === 2 && <StepTwo />}
+            {step === 3 && <StepThree />}
+            {step === 4 && <StepFour />}
+            {step === 5 && <StepFive />}
           </form>
-          <div className="flex flex-row mt-9 pb-10">
-            <button className=" bg-yellow-500 uppercase mt-4 py-4 px-24 font-bold text-sm">
+
+          <div className="flex flex-row mt-9 pb-10 absolute">
+            <button
+              onClick={nextStep}
+              className=" bg-yellow-500 uppercase mt-4 py-4 px-24 font-bold text-sm"
+            >
               NEXT
             </button>
 
-            <button className="  border ml-8 border-yellow-300 flex flex-row items-center justify-between uppercase mt-4 py-4 px-16 font-bold text-sm">
+            <button
+              onClick={prevStep}
+              className="  border ml-8 border-yellow-300 flex flex-row items-center justify-between uppercase mt-4 py-4 px-16 font-bold text-sm"
+            >
               <ArrowLeft className="mr-6" />
 
               <span className="uppercase">GO BACK</span>
