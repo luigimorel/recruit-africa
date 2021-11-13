@@ -14,7 +14,7 @@ const StepTwo = () => {
         id=""
         cols="50"
         placeholder="I’m motivated and a team player"
-        className="pt-2 px-3"
+        className="pt-2 px-3 rounded border border-gray-400"
         rows="10"
         minLength="70"
       ></textarea>

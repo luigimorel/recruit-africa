@@ -10,7 +10,7 @@ const StepFive = () => {
         <input
           type="text"
           name="title"
-          className="rounded w-3/4"
+          className="rounded w-3/4 border border-gray-400"
           id="title "
           placeholder="Book keeping"
         />

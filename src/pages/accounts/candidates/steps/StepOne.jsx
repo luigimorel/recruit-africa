@@ -57,7 +57,7 @@ const StepOne = () => {
             <input
               type="checkbox"
               name="role"
-              className="mr-5 rounded peer-checked:bg-black"
+              className="mr-5 rounded border border-gray-400 peer-checked:bg-black"
               id="role"
             />
           </div>

@@ -13,7 +13,7 @@ const StepThree = () => {
             type="text"
             name="title"
             id="title "
-            className="rounded w-72"
+            className="rounded w-72 border border-gray-400"
             placeholder="Payable accountant"
           />
         </div>
@@ -22,14 +22,19 @@ const StepThree = () => {
           <input
             type="text"
             name="title"
-            className="rounded w-72"
+            className="rounded w-72 border border-gray-400"
             id="title "
             placeholder="Enter company name"
           />
         </div>
       </div>
       <div className="flex items-center flex-row my-5">
-        <input type="checkbox" name="" id="" className="rounded" />
+        <input
+          type="checkbox"
+          name=""
+          id=""
+          className="rounded border border-gray-400"
+        />
         <span className="text-gray-800 ml-8">I currently work here</span>
       </div>
 
@@ -41,7 +46,7 @@ const StepThree = () => {
             name=""
             id=""
             placeholder="Select date"
-            className="w-72 rounded"
+            className="w-72 rounded border border-gray-400"
           >
             <option value="">Select date</option>
           </select>
@@ -52,7 +57,7 @@ const StepThree = () => {
             name=""
             id=""
             placeholder="Select date"
-            className=" w-72 rounded"
+            className=" w-72 rounded border border-gray-400"
           >
             <option value="">Select date</option>
           </select>
@@ -68,7 +73,7 @@ const StepThree = () => {
           type="text"
           name=""
           id=" "
-          className=" sm:w-4/5 rounded"
+          className=" sm:w-4/5 rounded border border-gray-400"
           multiple
           placeholder="Type skills"
         />
@@ -87,7 +92,7 @@ const StepThree = () => {
         id=""
         cols="80"
         rows="4"
-        className=" w-full"
+        className=" w-full border border-gray-400 rounded"
         placeholder="Created [accounting rule], which resulted in [percentage improvement]"
         required
         minLength="70"
