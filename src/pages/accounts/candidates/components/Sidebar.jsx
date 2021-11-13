@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <>
       <div className=" bg-gray-800 fixed">
-        <div className="  bg-candidates-gb h-screen w-80  ">
+        <div className="  bg-candidates-gb h-screen w-72  ">
           <div className="ml-10  mt-10">
             <Link to="/">
               <Logo className="mb-72" />

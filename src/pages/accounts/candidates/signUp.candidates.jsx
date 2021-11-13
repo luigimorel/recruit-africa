@@ -162,9 +162,11 @@ const SignUpCandidates = () => {
             </p>
           </div>
           <div className="sm:mr-40">
-            <button className="py-4  bg-yellow-500 w-full font-bold uppercase">
-              Get Started
-            </button>
+            <Link to="/profile-candidate">
+              <button className="py-4  bg-yellow-500 w-full font-bold uppercase">
+                Get Started
+              </button>
+            </Link>
           </div>
         </form>
       </div>

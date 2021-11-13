@@ -58,7 +58,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="sm:px-12  bg-white">
+      <div className="sm:px-20  bg-white">
         <Navbar />
       </div>
 
@@ -67,32 +67,30 @@ const LandingPage = () => {
       </div>
       <div className="sm:mx-20 mb-24  sm:block">
         <div className="flex flex-col">
-          <div className="flex flex-row justify-between">
-            <h3 className="font-bold text-4xl mb-5">Latest Jobs</h3>
-            <form action="">
-              <div className="flex  flex-row">
-                <span className="flex flex-row items-center sm:mr-9">
-                  <p className="mr-5">Full time</p>
-                  <input
-                    type="checkbox"
-                    className="bg-white  rounded border-2 border-gray-400"
-                  />
-                </span>
-                <span className="flex flex-row items-center sm:mr-9">
-                  <p className="mr-5">Part-time</p>
-                  <input
-                    type="checkbox"
-                    className="bg-white  rounded border-2 border-gray-400"
-                  />
-                </span>
-                <span className="flex flex-row items-center sm:mr-9">
-                  <p className="mr-5">Remote</p>
-                  <input
-                    type="checkbox"
-                    className="bg-white  rounded border-2 border-gray-400"
-                  />
-                </span>
-              </div>
+          <div className="flex flex-row justify-between items-center mb-5">
+            <h3 className="font-bold text-4xl ">Latest Jobs</h3>
+            <form action="" className="flex  flex-row">
+              <span className="flex flex-row items-center sm:mr-9">
+                <p className="mr-5">Full time</p>
+                <input
+                  type="checkbox"
+                  className="bg-white  rounded border-2 border-gray-400"
+                />
+              </span>
+              <span className="flex flex-row items-center sm:mr-9">
+                <p className="mr-5">Part-time</p>
+                <input
+                  type="checkbox"
+                  className="bg-white  rounded border-2 border-gray-400"
+                />
+              </span>
+              <span className="flex flex-row items-center sm:mr-9">
+                <p className="mr-5">Remote</p>
+                <input
+                  type="checkbox"
+                  className="bg-white  rounded border-2 border-gray-400"
+                />
+              </span>
             </form>
           </div>
         </div>
@@ -134,12 +132,12 @@ const LandingPage = () => {
           </tbody>
         </table>
       </div>
-      <div className="sm:mx-12">
+      <div className="sm:mx-20">
         <ImageSection descText="Find Jobs" />
       </div>
 
       <CTA ctaText="Create my resume" />
-      <div className="sm:mx-12">
+      <div className="sm:mx-20">
         <Testimonials testmonialHeading="You are in good hands, we are trusted by more than a thousand companies" />
       </div>
       <Footer />
