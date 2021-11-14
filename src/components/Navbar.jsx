@@ -5,9 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "./../assets/Logo.svg";
 import { ReactComponent as DropdownIcon } from "./../assets/Dropdown.svg";
 import { ReactComponent as BurgerMenu } from "./../assets/Menu.svg";
+import MobileNavbar from "./Mobile.Navbar";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
 
   const menuList = [
     {
@@ -33,9 +35,11 @@ const Navbar = () => {
         <img src={Logo} loading="lazy" alt=" " />
       </Link>
 
-      <p className="sm:hidden">
-        <BurgerMenu />
-      </p>
+      <BurgerMenu className="sm:hidden" onClick={() => setOpenNav(!openNav)} />
+
+      {/* Mobile navbar start */}
+      {openNav && <MobileNavbar />}
+
       <div className="sm:flex  md:flex-row hidden  items-center">
         <ul className="flex flex-row ">
           {menuList.map((x) => (
