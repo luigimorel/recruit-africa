@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import AvailableJobs from "./../../components/AvailableJobs";
+import AvailableJobs from "../../components/AvailableJobs";
 
-test("should render a send a link button    ", () => {
+test("should render a send a link button", () => {
   render(<AvailableJobs />);
   const buttonElement = screen.getByText(/find a job/i);
   expect(buttonElement).toBeInTheDocument();

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import CTA from "./../../components/CTA";
+import CTA from "../../components/CTA";
 
 test("should render start your career text", () => {
   render(<CTA />);
