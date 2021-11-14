@@ -33,7 +33,7 @@ function Testimonials(props) {
   ];
 
   return (
-    <div className="px-20">
+    <div className="sm:px-20 px-8">
       <h4 className="sm:text-4xl text-3xl sm:px-64   font-bold my-0 text-center mb-10">
         {testmonialHeading}
       </h4>
@@ -44,11 +44,11 @@ function Testimonials(props) {
             key={x.id}
             className={
               x.id === 3
-                ? "flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-0  mb-10 sm:mb-20"
+                ? "flex flex-col hover:border-yellow-400 border-b-2 rounded shadow-md mr-0  mb-10 sm:mb-20"
                 : "flex flex-col hover:border-yellow-400 border-b-2 shadow-md mr-6  mb-10 sm:mb-20"
             }
           >
-            <div className="px-3 pt-3 sm:px-6 sm:pt-10">
+            <div className="px-4 pt-4 sm:px-6 sm:pt-10">
               <div className="flex flex-row">
                 <span className=" mr-4 sm:mr-7 ">
                   <StarFilledIcon />
