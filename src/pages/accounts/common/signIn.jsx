@@ -9,7 +9,7 @@ import { ReactComponent as Lock } from "./../../../assets/accounts/lock.svg";
 
 const SignInCandidates = () => {
   return (
-    <div className="mx-auto pt-10 w-full px-8 h-screen  sm:w-2/4">
+    <div className="mx-auto pt-10 w-full px-8 min-h-screen  sm:w-2/4">
       <div className="flex flex-col sm:flex-row justify-around items-center mb-14">
         <Link to="/">
           <Logo />
