@@ -34,7 +34,7 @@ const SignUpCandidates = () => {
         </div>
       </div>
 
-      <div className="sm:w-1/2 w-full mx-4 sm:mx-0 sm:ml-24">
+      <div className="sm:w-1/2 w-full mx-4 sm:mx-0 relative sm:ml-24">
         <div className="sm:mr-12">
           <h6 className="mb-9 float-right mt-10">
             Already have an account? {"   "}

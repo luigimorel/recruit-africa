@@ -58,14 +58,14 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="sm:px-20  bg-white">
+      <div className="sm:px-20 px-8 bg-white">
         <Navbar />
       </div>
 
       <div className="bg-white">
         <AvailableJobs />
       </div>
-      <div className="sm:mx-20 mb-24  sm:block">
+      <div className="sm:mx-20 mb-24 hidden sm:block">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center mb-5">
             <h3 className="font-bold text-4xl ">Latest Jobs</h3>
@@ -96,7 +96,7 @@ const LandingPage = () => {
         </div>
 
         {/* Start of the table */}
-        <table className="border-0 w-full jobs-table">
+        <table className="border-0 w-full  jobs-table">
           <thead className="py-20 bg-yellow-100">
             <tr className="py-20">
               {rowHeadings.map((x) => (
@@ -132,12 +132,12 @@ const LandingPage = () => {
           </tbody>
         </table>
       </div>
-      <div className="sm:mx-20">
+      <div className="sm:mx-20 mx-8">
         <ImageSection descText="Find Jobs" />
       </div>
 
       <CTA ctaText="Create my resume" />
-      <div className="sm:mx-20">
+      <div>
         <Testimonials testmonialHeading="You are in good hands, we are trusted by more than a thousand companies" />
       </div>
       <Footer />
