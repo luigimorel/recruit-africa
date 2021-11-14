@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
-//Main routes container
+//  Main routes container
 import Routes from "./Routes";
 
 const App = () => {
