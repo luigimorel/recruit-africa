@@ -19,3 +19,8 @@ table tbody tr {
 .dropdown .dropdown-menu {
   display: block;
 }
+
+.minor-nav:active {
+  font-weight: 500;
+  color: black;
+}
