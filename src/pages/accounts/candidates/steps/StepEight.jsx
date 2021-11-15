@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Assets
 import { ReactComponent as UploadIcon } from "./../../../../assets/accounts/Upload.svg";
@@ -7,7 +7,6 @@ import { ReactComponent as UploadIcon } from "./../../../../assets/accounts/Uplo
 import ImageUploader from "../../common/ImageUploader";
 
 const StepEight = () => {
-  const [image, setImage] = useState("");
   return (
     <>
       <h3 className=" font-bold text-2xl mb-4">Upload profile picture </h3>
@@ -27,7 +26,7 @@ const StepEight = () => {
 
           <p className="text-gray-400 mt-3">Maximum file size 5MB</p>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 };
