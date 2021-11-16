@@ -11,6 +11,7 @@ import SignUpRecruitors from "./pages/accounts/recruitors/signup.recruitors";
 import CandidateProfile from "./pages/accounts/candidates/CandidateProfile";
 import ReviewResume from "./pages/accounts/candidates/ReviewResume";
 import CandidatesDashboard from "./pages/accounts/candidates/dashboard/Dashboard";
+import DashboardJobDetails from "./pages/accounts/candidates/dashboard/components/jobDetails.dashboard";
 
 const Routes = () => {
   return (
@@ -29,6 +30,11 @@ const Routes = () => {
           exact
           path="/candidate-dashboard"
           component={CandidatesDashboard}
+        />
+        <Route
+          exact
+          path="/candidate-dashboard/:id"
+          component={DashboardJobDetails}
         />
       </Switch>
     </>
