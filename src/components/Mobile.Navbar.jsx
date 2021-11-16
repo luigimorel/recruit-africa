@@ -31,12 +31,12 @@ const MobileNavbar = () => {
   ];
 
   return (
-    <div className="dropdown flex flex-row delay-75 transition rounded absolute pr-10  mt-16 min-w-full">
-      <ul className="dropdown-menu absolute bg-black pt-2">
+    <div className="sm:hidden dropdown sticky ">
+      <ul className="dropdown-menu bg-yellow-100">
         {menuList.map((x) => (
-          <li key={x.id} className=" w-80">
+          <li key={x.id} className=" w-full">
             <NavLink
-              className=" bg-black text-white hover:text-yellow-400 text-base  py-2 px-5  block whitespace-no-wrap"
+              className=" bg-yellow-50 text-gray-800 hover:text-yellow-400 text-base  py-2 px-5  block whitespace-no-wrap"
               to={x.route}
             >
               {x.text}

@@ -25,8 +25,8 @@ const AvailableJobs = () => {
                 required
                 id="title"
                 placeholder="Job title"
-                autoComplete
-                class="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
+                autoComplete="true"
+                className="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
               />
             </label>
 

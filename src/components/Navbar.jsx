@@ -5,9 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "./../assets/Logo.svg";
 import { ReactComponent as DropdownIcon } from "./../assets/Dropdown.svg";
 import { ReactComponent as BurgerMenu } from "./../assets/Menu.svg";
+import MobileNavbar from "./Mobile.Navbar";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const menuList = [
     {
@@ -28,24 +30,23 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center py-8  ">
-      <Link to="/">
-        <img src={Logo} loading="lazy" alt=" " />
-      </Link>
+    <>
+      <div className="flex flex-row justify-between items-center py-8  ">
+        <Link to="/">
+          <img src={Logo} loading="lazy" alt=" " />
+        </Link>
 
-      <p className="sm:hidden">
-        <BurgerMenu />
-      </p>
-      <div className="sm:flex  md:flex-row hidden  items-center">
-        <ul className="flex flex-row ">
-          {menuList.map((x) => (
-            <Link key={x.id} to={x.route}>
-              <li className="mr-8 sm:mr-4 ">{x.text}</li>
-            </Link>
-          ))}
-        </ul>
+        <BurgerMenu onClick={() => setOpen(!open)} className="sm:hidden" />
 
-        <div>
+        <div className="sm:flex  md:flex-row hidden  items-center">
+          <ul className="flex flex-row ">
+            {menuList.map((x) => (
+              <Link key={x.id} to={x.route}>
+                <li className="mr-8 sm:mr-4 ">{x.text}</li>
+              </Link>
+            ))}
+          </ul>
+
           <div className="dropdown inline-block relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -78,7 +79,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+      {open && <MobileNavbar />}
+    </>
   );
 };
 
