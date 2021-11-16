@@ -123,7 +123,7 @@ const LandingPage = () => {
                 <td className="text-gray-800">UGX {x.timePosted}</td>
                 <td className="text-gray-800">{x.amount}</td>
                 <td className="">
-                  <button className="border-gray-500 mx-5 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
+                  <button className="border-gray-500 my-3 border-2 px-5 py-2.5 hover:bg-yellow-500 hover:border-transparent">
                     {x.btnText}
                   </button>
                 </td>
