@@ -12,6 +12,7 @@ import CandidateProfile from "./pages/accounts/candidates/CandidateProfile";
 import ReviewResume from "./pages/accounts/candidates/ReviewResume";
 import CandidatesDashboard from "./pages/accounts/candidates/dashboard/Dashboard";
 import DashboardJobDetails from "./pages/accounts/candidates/dashboard/components/jobDetails.dashboard";
+import JobApplications from "./pages/accounts/candidates/dashboard/components/jobApplications";
 
 const Routes = () => {
   return (
@@ -35,6 +36,11 @@ const Routes = () => {
           exact
           path="/candidate-dashboard/:id"
           component={DashboardJobDetails}
+        />
+        <Route
+          exact
+          path="/candidate-applications"
+          component={JobApplications}
         />
       </Switch>
     </>
