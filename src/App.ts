@@ -1,14 +1,16 @@
-import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
 //  Main routes container
-import Routes from "./Routes";
+import AppRoutes from "./Routes";
 
 const App = () => {
   return (
     <div className="app-container h-full">
       <BrowserRouter>
-        <Routes />
+        <AppRoutes />
       </BrowserRouter>
     </div>
   );

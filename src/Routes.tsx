@@ -1,20 +1,21 @@
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 //Components
+import CandidateProfile from "./pages/accounts/candidates/CandidateProfile";
+import JobApplications from "./pages/accounts/candidates/dashboard/components/jobApplications";
+import DashboardJobDetails from "./pages/accounts/candidates/dashboard/components/jobDetails.dashboard";
+import CandidatesDashboard from "./pages/accounts/candidates/dashboard/Dashboard";
+import ReviewResume from "./pages/accounts/candidates/ReviewResume";
+import SignUpCandidates from "./pages/accounts/candidates/signUp.candidates";
+import ResetPassword from "./pages/accounts/common/resetPassword";
+import SignInCandidates from "./pages/accounts/common/signIn";
+import SignUpRecruitors from "./pages/accounts/recruitors/signup.recruitors";
 import FindCandidates from "./pages/FindCandidates";
 import FindJobs from "./pages/FindJobs";
 import LandingPage from "./pages/LandingPage";
-import SignInCandidates from "./pages/accounts/common/signIn";
-import SignUpCandidates from "./pages/accounts/candidates/signUp.candidates";
-import ResetPassword from "./pages/accounts/common/resetPassword";
-import SignUpRecruitors from "./pages/accounts/recruitors/signup.recruitors";
-import CandidateProfile from "./pages/accounts/candidates/CandidateProfile";
-import ReviewResume from "./pages/accounts/candidates/ReviewResume";
-import CandidatesDashboard from "./pages/accounts/candidates/dashboard/Dashboard";
-import DashboardJobDetails from "./pages/accounts/candidates/dashboard/components/jobDetails.dashboard";
-import JobApplications from "./pages/accounts/candidates/dashboard/components/jobApplications";
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
     <>
       <Switch>
@@ -47,4 +48,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default AppRoutes;

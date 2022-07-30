@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 //Assets
-import Logo from "./../assets/Logo.svg";
-import { ReactComponent as DropdownIcon } from "./../assets/Dropdown.svg";
-import { ReactComponent as BurgerMenu } from "./../assets/Menu.svg";
+import { ReactComponent as DropdownIcon } from "../assets/Dropdown.svg";
+import Logo from "../assets/Logo.svg";
+import { ReactComponent as BurgerMenu } from "../assets/Menu.svg";
 import MobileNavbar from "./Mobile.Navbar";
 
 const Navbar = () => {
