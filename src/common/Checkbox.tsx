@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Checkbox(props) {
   const { className, label, onChange, number } = props;
 

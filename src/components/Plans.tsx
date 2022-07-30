@@ -1,10 +1,9 @@
 import React from "react";
 
 //Assets
-import { ReactComponent as CheckCircle } from "./../assets/CheckCircle.svg";
-
+import { ReactComponent as CheckCircle } from "../assets/CheckCircle.svg";
 //Component
-import Checkbox from "./../common/Checkbox";
+import Checkbox from "../common/Checkbox";
 
 const Plans = () => {
   const flexPlan = [

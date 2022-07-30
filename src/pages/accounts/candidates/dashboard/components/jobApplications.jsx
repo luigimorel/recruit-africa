@@ -3,7 +3,7 @@ import React, { useState } from "react";
 //Components
 import DashboardNavMinor from "./navMinor.dashboard";
 import DashboardSidebar from "./sidebar.dashboard";
-import Checkbox from "./../../../../../common/Checkbox";
+import Checkbox from "../../../../../common/Checkbox";
 
 //Assets
 import { ReactComponent as BriefCaseSmall } from "./../../../../../assets/accounts/BriefcaseSmall.svg";

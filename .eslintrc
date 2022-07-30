@@ -1,0 +1,7 @@
+{
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "sort-imports": "error",
+    "no-unused-vars": "error"
+  }
+}

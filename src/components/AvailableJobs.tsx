@@ -1,8 +1,8 @@
 import React from "react";
 
 //Assets
-import { ReactComponent as SearchIcon } from "./../assets/Search.svg";
-import { ReactComponent as LocationIcon } from "./../assets/Location.svg";
+import { ReactComponent as LocationIcon } from "../assets/Location.svg";
+import { ReactComponent as SearchIcon } from "../assets/Search.svg";
 
 const AvailableJobs = () => {
   return (
@@ -16,22 +16,22 @@ const AvailableJobs = () => {
         <div className="flex flex-col sm:flex-row  items-center sm:justify-center sm:bg-white p-2 mb-20 sm:mb-40">
           <div className="flex sm:flex-row flex-col items-center justify-center ">
             {/* Job title */}
-            <label class="relative text-gray-400 sm:mr-3 mb-4 focus-within:text-gray-600 block">
+            <label className="relative text-gray-400 sm:mr-3 mb-4 focus-within:text-gray-600 block">
               <SearchIcon className="absolute w-6 h-6 top-2.5  left-4" />
-
-              <input
-                type="text"
-                name="title"
-                required
-                id="title"
-                placeholder="Job title"
-                autoComplete="true"
-                className="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
-              />
             </label>
 
+            <input
+              type="text"
+              name="title"
+              required
+              id="title"
+              placeholder="Job title"
+              autoComplete="true"
+              className="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
+            />
+
             {/* Location */}
-            <label class="relative text-gray-400 mb-4 focus-within:text-gray-600 block  sm:mr-3">
+            <label className="relative text-gray-400 mb-4 focus-within:text-gray-600 block  sm:mr-3">
               <LocationIcon className="absolute w-6 h-6 top-3  left-4" />
               <input
                 type="text"
@@ -39,8 +39,8 @@ const AvailableJobs = () => {
                 required
                 id="location"
                 placeholder="Location"
-                autoComplete
-                class="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
+                autoComplete="true"
+                className="form-input border-none  rounded py-3 px-4 w-full bg-white placeholder-gray-400 text-gray-500 appearance-none block pl-14 focus:outline-none"
               />
             </label>
           </div>
